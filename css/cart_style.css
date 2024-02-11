@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    /* perspective: 1000px; */
+    position: relative;
+    min-height: 100vh;
+}
+h1{
+    width: 82%;
+    text-align: center;
+    background-color: blanchedalmond;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow:10px 10px 10px grey,
+	-10px -10px 10px grey;
+    margin-top: 10px;
+    font-size: 25px;
+    padding: 20px;
+}
+
+
+.cart-product{
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px grey,
+	-10px -10px 10px grey;
+    padding: 10px;
+    display: flex;
+    column-gap: 30px;
+    width: 82%;
+    margin: 25px 0;
+}
+
+.cart-product img{
+    min-width: 25%;
+    height: 330px;
+    object-fit: contain;
+}
+
+.product-details{
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.cart-product h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cart-product p{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.cart-product p:last-of-type{
+    font-size: 24px;
+}
+
+.product-count{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.product-count > div{
+    font-size: 32px;
+    cursor: pointer;
+}
+.product-count > div:first-of-type{
+    font-size: 24px;
+}
+
+.product-details > div:last-of-type{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.product-details button{
+    display: inline-block;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 5px;
+    background-color: #699c47;
+    color: white;
+    cursor: pointer;
+}
+.cart-summary{
+
+    position: fixed;
+    top:120px;
+    right: 10px;
+    width: 240px;
+    height: 200px;
+    z-index: 110;
+    box-shadow: 10px 10px 10px grey, -10px -10px 10px grey;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.cart-summary >*{
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+@media(min-width:700px) and (max-width:1200px){
+    .cart-summary{
+        width: 140px;
+        height: auto; 
+    }
+    .cart-summary >*{
+        font-size: 18px;
+    }
+}
+.cart-summary button{
+    display: inline-block;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #699c47;
+    color: white;
+    cursor: pointer;
+    margin-top: 1px;
+    width: 100%;
+}
+
+@media(max-width:768px){
+    .user-products{
+        width: 100%;
+    }
+    h1{
+        width: 95%;
+        margin-left:  10px;
+        margin-right:  10px;
+    }
+    .cart-product{
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-bottom: 15px;
+        border-radius: 15px;
+        padding: 10px;
+        margin: 25px 10px;
+    }
+    .cart-product img{
+        height: 250px;
+        width: 100%;
+    }
+    .cart-product p{
+        font-size: 18px;
+        margin-bottom: 6px;
+    }
+    .cart-product p:last-of-type{
+        font-size: 24px;
+    }
+    .product-count > div{
+        font-size: 24px;
+    }
+    .product-details button{
+        padding: 5px;
+    }
+    .cart-summary button{
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .cart-summary{
+        position: static;
+        width: 100%;
+        height: auto;
+    }
+}
+/* ---------------------------- */
+
+/*---------------- start up button------------- */
+
+.up-btn {
+    bottom: 250px;
+    opacity: 0;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    position: fixed;
+    font-size: 26px;
+    z-index: 2000;
+    transition: all .5s ease;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+
+  }
+  @media (max-width:450px){
+    .up-btn{
+        width: 35px;
+        height: 35px;
+        right: 0; 
+        padding: 5px; 
+    }
+  }
+  @media  (min-width:451px){
+    .up-btn{
+        width: 50px;
+        height: 50px;
+        right: 20px; 
+        padding: 10px;
+    }
+    .up-btn_show {
+        width: 50px;
+    }
+}
+.up-btn_show {
+   opacity: .7;
+   bottom: 20px;
+   visibility: visible;
+ }

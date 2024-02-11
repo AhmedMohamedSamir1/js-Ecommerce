@@ -1,0 +1,152 @@
+/* // Small devices (landscape phones, 576px and up) */
+/* // Medium devices (tablets, 768px and up) */
+/* // Large devices (desktops, 992px and up) */
+/* // X-Large devices (large desktops, 1200px and up) */
+/* // XX-Large devices (larger desktops, 1400px and up) */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+    font-family: 'Poppins',sans-serif;
+}
+
+:root{
+    --login-background: #70c5c0;
+    --login-form:#074f4b87;
+    --yellow:rgb(69 55 4);;
+}
+
+body{
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    background-color: aliceblue;
+    padding: 15px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-top: 150px;
+
+    background-color: var(--login-form);
+}
+
+@media(max-width:576px){
+    form{
+        width: 90%;
+    }
+}
+
+@media(min-width:577px){
+    form{
+        width: 90%;
+    }
+}
+
+@media(min-width:992px){
+    form{
+        width: 60%;
+    }
+}
+
+@media(min-width:1200px){
+    form{
+        width: 50%;
+    }
+}
+
+
+form div, form button{
+    width: 100%;
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 18px;
+    display: inline-block;
+    width: 100%;
+}
+form div p{
+    margin-left: 10px;
+    color: red;
+    display: none;
+}
+  /* Styling for focused state */
+  input:focus
+  {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Styling for placeholder text */
+  input[type="text"]::placeholder {
+    color: #999;
+  }
+
+  /* Styling for disabled state */
+input[type="text"]:disabled {
+    background-color: #f5f5f5;
+    color: #888;
+}
+
+form button{
+    margin-top: 15px;
+    /* background-color: #699c47; */
+    background-color: #05056094;
+    border: 0;
+    padding: 10px;
+    font-size: 26px;
+    color: white;
+}
+
+form img{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: var(--login-background);
+    padding: 20px;
+    border-radius: 50%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+}
+
+@media(max-width:576px){
+    form img{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+
+
+ /* ------------------------------ */
+ footer{
+    padding: 10px;
+    background-color: #699c47;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+ }
+
+ @media (max-width: 768px){
+    footer{
+        font-size: 14px;
+        
+    }
+ }
+
+

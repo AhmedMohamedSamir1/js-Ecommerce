@@ -1,0 +1,184 @@
+:root{
+    --arrow-color:#777777;
+    --navBar-scrollBar-color: #777777;
+    --navBar-scrollBar-background:  rgba(0, 0, 0, 0.664);
+    --side-bar-width: 250px;
+}
+
+aside{
+    position: fixed;
+    height: 100vh;
+    background-color: cornsilk;
+    transition: all 0.5s ease-in-out; 
+    width: var(--side-bar-width);
+    top: 0;
+    left: 0;
+    transform: translateX(-250px);
+    padding-top: 10px;
+    z-index: 3;
+}
+.sidebar-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+.sidebar-header img{
+    margin-right:10px;
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+}
+
+ .sidebar-header span i{
+    font-size: 44px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.sidebar-header span i:hover{
+    color: red;
+} 
+
+.separator-line{
+    margin: 15px 0;
+    width: 100%;
+    height: 2px;
+    background-color: #777777;
+}
+ .hide-sidebar{
+    transform: translateX(0);
+ }
+
+.options div{
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+    column-gap: 10px;
+    align-items: center;
+    transition: all 0.4s ease-in-out;
+}
+.options div:hover{
+    background-color: #777777;
+}
+.options div:hover i, .options div:hover span{
+    color: white
+}
+.options div i{
+    width: 50px;
+    font-size: 30px;
+    transition: all 0.4s ease-in-out;
+}
+.options div span{
+    font-size: 22px;
+    transition: all 0.4s ease-in-out;
+}
+
+.options div span a{
+    color: black;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+
+  /*
+.sidebar-header::after{
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    color: black;
+    z-index: 3;
+}
+aside{
+    padding-top: 15px;
+    transition: 0.35s;
+    overflow-y: auto;
+    box-shadow: 0 0 30px 0 rgba(200 200 200 / 20%);
+    display: inline-block;
+    min-width: 250px;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    /* display: none; */
+/* } */
+
+/* aside::-webkit-scrollbar{
+    width: 5px;
+} */
+
+/*background of scroll bar*/
+/* aside::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0.664);
+}
+/*color of scroll bar*/
+/* aside::-webkit-scrollbar-thumb{
+    background-color: var(--arrow-color);
+}   */
+
+/*start sidbar header consist of img and span */
+/* .sidebar-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+/* aside ul{
+    list-style-type: none;
+    padding: 10px;
+}
+aside ul li ul{
+    padding: 0;
+    margin: 0;
+} */
+
+/* .sidebar-list li div a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: inherit;
+}
+.collapse-list li a{
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+.sidebar-list li div:hover, .collapse-list li:hover{
+    transition: 0.4s;
+    background-color: #dbe5fd;
+    color: #4c7cf3 ;
+    cursor: pointer;
+} */
+
+/* -------------------------
+----------------------------- */
+
+/* <aside id="sidebar" class="">
+<div class="sidebar-header">
+    <img src="images/e-commerce-logo2.png">
+    <span id="btnCloseSideBar"><i class="fas fa-times-circle"></i></span>
+</div>
+<div class="separator-line"></div>
+
+<div class="options">
+    <div>
+        <i class="fas fa-home"></i>
+        <span>Home</span>
+    </div>
+    <div>
+        <i class="fas fa-info-square"></i>
+        <span>About</span>
+    </div>
+    <div>
+        <i class="fas fa-phone"></i>
+        <span>Contact-Us</span>
+    </div>
+</div>
+
+</aside> */

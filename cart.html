@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+    <link rel="stylesheet" href="css/my_responsive.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/my_navbar_style.css">
+    <link rel="stylesheet" href="css/my_sidebar_style.css">
+
+    <link rel="stylesheet" href="css/cart_style.css">
+</head>
+<body>
+    <nav>
+        <img src="images/e-commerce-logo2.png" alt="Company Logo" style="display: block;">
+        <ul>
+            <li>
+                <a href="view.html">Home</a>
+                <div class="drop-down-menu">
+                    <div>home 1</div>
+                    <div>home 2</div>
+                    <div>home 3</div>
+                </div>
+            </li>
+          <li><a href="#">About</a></li>
+          <li><a href="contact-us.html">Contact-Us</a></li>
+        </ul>
+        
+        
+        <div class="cart-icon">
+            <div class="cart-icon-counter">0</div>
+            <!-- <i class="fas fa-globe-asia fa-3x"></i>           -->
+            <i class="far fa-shopping-cart"></i>         
+        </div>
+
+        <div class="toggle-sidebar-icon">
+            <i class="fas fa-bars"></i>        
+        </div>
+
+    </nav>
+    <aside id="sidebar" class="">
+        <div class="sidebar-header">
+            <img src="images/e-commerce-logo2.png">
+            <span id="btnCloseSideBar"><i class="fas fa-times-circle"></i></span>
+        </div>
+        <div class="separator-line"></div>
+
+        <div class="options">
+            <div>
+                <i class="fas fa-home"></i>
+                <span><a href="view.html">Home</a></span>
+            </div>
+            <div>
+                <i class="fas fa-info-square"></i>
+                <span>About</span>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i>
+                <span><a href="contact-us.html">contact-us</a></span>
+            </div>
+        </div>
+
+    </aside>
+    <div class="container">
+        <h1> welcome to your cart</h1>
+        <main>
+            <div class="user-products">
+                <!-- <div class="cart-product">
+                    <img src="images/lufi 1.jpg">
+                    <div class="product-details">
+                        <h2>product title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste, incidunt velit doloribus inventore nisi hic a officia dolorum. Id, beatae corrupti. Similique aliquid voluptate optio nam voluptates beatae aut.</p>
+                        <p>Price: 1212.00$</p>
+                        <div class="product-count">
+                            <div>quantity: </div>
+                            <div><i class="fas fa-plus-square"></i></div>
+                            <div>2</div>
+                            <div><i class="fas fa-minus-square"></i></div>
+                        </div>
+                        <div>total price: 1234$</div>
+                        <button>remove from cart</button>
+                    </div>
+                </div>
+                <div class="cart-product">
+                    <img src="images/lufi 1.jpg">
+                    <div class="product-details">
+                        <h2>product title</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias iste, incidunt velit doloribus inventore nisi hic a officia dolorum. Id, beatae corrupti. Similique aliquid voluptate optio nam voluptates beatae aut.</p>
+                        <p>Price: 1212.00$</p>
+                        <div class="product-count">
+                            <div>quantity: </div>
+                            <div><i class="fas fa-plus-square"></i></div>
+                            <div>2</div>
+                            <div><i class="fas fa-minus-square"></i></div>
+                        </div>
+                        <div>total price: 1234$</div>
+                        <button>remove from cart</button>
+                    </div>
+    
+    
+                </div>            -->
+               
+            </div>
+         
+        </main>
+    </div>
+    <div class="cart-summary">
+        <h2>summary</h2>
+        <p>total price: </p>
+        <button>check out</button>
+    </div>
+    
+    <div class="up-btn">
+        <i class="far fa-arrow-up"></i>
+    </div>
+    
+    <script src="script/cart_script.js"></script>
+</body>
+</html>
